@@ -16,7 +16,7 @@ def test_2_3_1_should_be_6():
 
 def test_empty_string_returns_error():
     # arrange
-    expression = " ", 3
+    expression = " , 3"
     expected = -1
 
     # act
@@ -28,7 +28,7 @@ def test_empty_string_returns_error():
 
 def test_none_returns_error():
     # arrange
-    expression = None, 2, 5
+    expression = None
     expected = -1
 
     # act
@@ -38,9 +38,9 @@ def test_none_returns_error():
     assert expected == actual
 
 
-def test_add_5_and_minus_1_shhould_be_4():
+def test_add_5_and_minus_1_should_be_4():
     # arrange
-    expression = 5, -1
+    expression = "5, -1"
     expected = 4
 
     # act
